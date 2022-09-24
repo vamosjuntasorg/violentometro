@@ -1,6 +1,6 @@
 <!-- 	HEADER-->
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="pt-br">
 
 <head>
 
@@ -16,7 +16,7 @@
 
 
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
 
     <!-- FACEBOOK -->  
     <meta property="og:locale" content="pt_BR" />
@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="assets/css/theme.css?v=1.0">
 
     <link href="assets/fonts/Barrio/css2.css?family=Barrio&display=swap"  rel="stylesheet">
-    <link href='assets/fonts/Barrio/cssMontserrat.css?family=Montserrat' rel='stylesheet'>
+    <link href="assets/fonts/Barrio/cssMontserrat.css?family=Montserrat" rel="stylesheet">
     <!-- /STYLE -->
 
     <!-- JS -->
@@ -72,13 +72,13 @@
                     <div class="logos-top float-right">
 
                         <!-- logo IX.br -->
-                        <a href="https://ceweb.br" target="_blank" alt="Ir para página - ceweb.br"><img
+                        <a href="https://ceweb.br" target="_blank" title="Ir para página - Ceweb.br"><img
                             src="assets/img/ceweb-negativo.svg" alt="Logo ceweb.br"></a>
                             <!-- / logo IX.br -->
 
-                            <a href="https://nic.br" class="mr-2" target="_blank" alt="Ir para página - NIC.br"><img
+                            <a href="https://nic.br" class="mr-2" target="_blank" title="Ir para página - NIC.br"><img
                                 src="assets/img/nic-negativo.svg" alt="Logo NIC.br"></a>
-                                <a href="https://cgi.br" target="_blank" alt="Ir para página - CGI.br"><img
+                                <a href="https://cgi.br" target="_blank" title="Ir para página - CGI.br"><img
                                     src="assets/img/cgi-negativo.svg" alt="Logo CGI.br"></a>
 
                                 </div>
@@ -107,13 +107,13 @@
                             <!-- itens menu -->
                             <ul class="navbar-nav ml-auto align-items-center">
 
-                                <li class="nav-item"><a href="#sobre" title="..." class="page-scroll nav-link">Sobre</a></li>
+                                <li class="nav-item"><a href="#sobre" class="page-scroll nav-link">Sobre</a></li>
 
-                                <li class="nav-item"><a href="#graficos" title="..." class="page-scroll nav-link">Gráficos</a></li>
+                                <li class="nav-item"><a href="#graficos" class="page-scroll nav-link">Gráficos</a></li>
 
-				<li class="nav-item"><a href="#metodologia" title="..." class="page-scroll nav-link">Metodologia</a></li>
+				<li class="nav-item"><a href="#metodologia" class="page-scroll nav-link">Metodologia</a></li>
 				
-                                <li class="nav-item"><a href="#parceria" title="..." class="page-scroll nav-link">Parcerias</a></li>
+                                <li class="nav-item"><a href="#parceria" class="page-scroll nav-link">Parcerias</a></li>
 
 
                             </ul>
@@ -130,22 +130,26 @@
 <div class="col-12 p-0">
 
 	<!-- 	BANNER-->
-<div class="content_about" id="conteudo">
+	<div class="content_about" id="conteudo">
 		<!-- IMG HEADER -->
-		<img src="assets/img/bg/header_violentometro.jpg" alt="Banner do projeto">
+		<img src="assets/img/bg/header_violentometro.jpg" alt="Banner do projeto. Imagem que mostra o olhar de uma mulher.">
 		<!-- IMG HEADER -->
 
 		<div class="container" id="sobre">
 			<h1 class="title_site">VIOLENTÔMETRO</h1>
-			<p class="content_home">O Violentômetro é um projeto de monitoramento de violência política na web. As postagens
-			  na plataforma Twitter direcionadas a mulheres candidatas a deputada estadual e federal nas eleições gerais de 2022
-			  são acompanhadas em tempo real desde o início da campanha eleitoral. Uma inteligência artificial identifica
-			  e contabiliza discursos violentos e de ódio dia a dia.</p>
+			<p class="content_home">
+O Violentômetro é um projeto experimental que faz uso de inteligência artificial para identificar discursos de ódio na rede. Uma primeira versão desse modelo, treinado com exemplos e contra-exemplos de comentários agressivos classificados por especialistas e publicados em trabalhos acadêmicos, foi aplicado para identificar e contabilizar postagens violentas direcionadas a candidatas a deputada estadual e federal nas eleições de 2022. Essas postagens são coletadas do Twitter em tempo real desde o início da campanha eleitoral.
+</p>
+
+<p class="content_home">
+Os números deste projeto não representam o universo de usuários nem a quantidade de discurso de ódio em toda a rede social. O resultado é uma amostra específica durante o período eleitoral de 2022.
+</p>
+
 		</div>
 	</div>	<!-- BANNER -->
 
 	<!-- 	GRAFICO NÚMEROS-->
-
+	
 <section id="graficos">
 	<div class="container">
 
@@ -216,11 +220,11 @@
 	<!-- GRAFICO NÚMEROS -->
 
 	<!-- 	GRAFICO PIZZA PILHAS -->
-
+	
 	<!-- GRAFICOS PILHA PIZZA -->
 	<section id="graficos-pilhas">
 		<div class="graficos mt-5">
-			<img src="assets/img/bg/bg-graficos-pilhas.png" class="bg_container_graficos" alt="Gráfico - lorem">
+			<img src="assets/img/bg/bg-graficos-pilhas.png" class="bg_container_graficos" alt="Gráfico - lorem" aria-hidden="true" role="presentation">
 			<div class="container">
 				<h2 class="sub_title_site">Interações e ataques dia a dia</h2>
 
@@ -231,9 +235,10 @@
 							<div class="col-12 col-lg-6 col-md-6 col-sm-12">
 								<p class="desc_box_number">
 								O gráfico acima mostra, para cada dia, do começo da campanha eleitoral até o dia da eleição,
-								  o número total de tweets direcionados às candidatas (painel de baixo), o número de tweets com
+								  o número total de tweets direcionados às candidatas (painel de cima), o número de tweets com
 								  discursos violentos direcionados às candidatas (painel do meio) e a porcentagem dos tweets
-								  que continham alguma forma de violência (painel de cima).
+								  que continham alguma forma de violência (painel de baixo). Uma tabela com os dados do gráfico pode
+								  ser obtida <a href="assets/data/tweets_agressivos_por_dia_feminino.csv" title="Arquivo CSV com os dados do gráfico">aqui</a>.
 								  </p>
 							</div>
 							
@@ -248,7 +253,7 @@
 	<!-- GRAFICO PIZZA PILHAS  -->
 
 	<!-- 	GRAFICO COMPARTILHAMENTO -->
-
+	
 	<!-- COMPARTILHAMENTO -->
 	<section class="share">
 		<div class="container">
@@ -268,7 +273,7 @@
 								<i class="fab fa-twitter" aria-hidden="true"></i>
 							</span>
 							<span class="desc_share">
-								<a href="https://twitter.com/intent/tweet?text=O projeto Violentômetro está monitorando a violência contra candidatas no Twitter: http://violentometro.ceweb.br" target="_blank">Compartilhe no Twitter</a>
+								<a href="https://twitter.com/intent/tweet?text=O%20projeto%20Violentômetro%20está%20monitorando%20a%20violência%20contra%20candidatas%20no%20Twitter:%20http://violentometro.ceweb.br" target="_blank">Compartilhe no Twitter</a>
 							</span>
 						</p>
 						<p>
@@ -293,7 +298,7 @@
 								<i class="fa fa-envelope" aria-hidden="true"></i>
 							</span>
 							<span class="desc_share">
-								<a href="mailto:?subject=Violentômetro, um projeto de monitoramento de violência política na web&body=Oi, tudo bem?%0A%0AFiquei sabendo desse projeto e achei que poderia interessar a você:%0Ahttp://violentometro.ceweb.br" target="_blank">Compartilhe por e-mail</a>
+								<a href="mailto:?subject=Violentômetro,%20um%20projeto%20de%20monitoramento%20de%20violência%20política%20na%20web&body=Oi,%20tudo%20bem?%0A%0AFiquei%20sabendo%20desse%20projeto%20e%20achei%20que%20poderia%20interessar%20a%20você:%0Ahttp://violentometro.ceweb.br" target="_blank">Compartilhe por e-mail</a>
 							</span>
 						</p>
 					</div>
@@ -301,43 +306,53 @@
 			</div>
 		</div>
 	</section>
-	<!-- COMPARTILHAMENTO -->
-	<!-- GRAFICO COMPARTILHAMENTO  -->
+	<!-- COMPARTILHAMENTO -->	<!-- GRAFICO COMPARTILHAMENTO  -->
 
 	<!-- 	METODOLOGIA -->
-	<!-- METODOLOGIA -->
+		<!-- METODOLOGIA -->
 	<section id="metodologia" class="mt-5">
 		<div class="container">
 			<div class="container_parceria">
 				<h3 class="title_parceria">Metodologia</h3>
 				<p class="desc_box_number">Os perfis no Twitter das candidatas e candidatos a deputado estadual, distrital e federal foram
-				  coletados dos <a href="https://dadosabertos.tse.jus.br/dataset/candidatos-2022" target="_blank">dados abertos do TSE</a>,
+				  coletados dos <a href="https://dadosabertos.tse.jus.br/dataset/candidatos-2022" title="Ir para página - Dados do TSE" target="_blank">dados abertos do TSE</a>,
 				  de acordo com o informado pelos partidos durante o registro
-				  das candidaturas. Essa lista foi complementada com perfis dos atuais deputados e deputadas federais concorrendo
-				  à reeleição, caso não tivessem sido informados ao TSE. Foram encontrados 1.723 perfis de candidaturas a deputado
-				  federal, 1.648 de deputado estadual e 103 de deputado distrital. Desses perfis, 28% são de candidaturas femininas.
+				  das candidaturas. Essa lista foi complementada com perfis dos atuais deputados e deputadas federais concorrendo à reeleição,
+				  se não informados ao TSE. Dentre as 27.976 candidaturas de 2022, foram encontrados 1.723 perfis de candidaturas a deputado
+				  federal, 1.648 de deputado estadual e 103 de deputado distrital com contas no Twitter, totalizando 3.474 perfis na rede
+				  social. Desses perfis, 28% são de candidaturas femininas.
 				</p>
-				<p class="desc_box_number">A cada três horas, um <a href="https://github.com/cewebbr/violentometro" target="_blank">sistema automatizado</a>
-				  seleciona um terço dos 3.474 perfis de maneira aleatória
-				  e captura as menções feitas a eles dentro das últimas três horas, de forma que todas as 24 horas de todos os dias
-				  são monitoradas de maneira amostral. A maioria das menções coletadas são respostas a tweets das candidaturas.
+				<p class="desc_box_number">A cada três horas, um <a href="https://github.com/cewebbr/violentometro" title="Ir para página - Repositório do Violentômetro" target="_blank">sistema automatizado</a>
+				  seleciona um terço dos 3.474 perfis de maneira aleatória e captura as menções feitas a eles dentro das últimas
+				  três horas, de forma que todas as 24 horas de todos os dias são monitoradas de maneira amostral. A maioria das
+				  menções coletadas são respostas a tweets das candidaturas. A coleta e processamento de dados deste projeto segue o seguinte
+				  <a href="assets/docs/aviso_privacidade_violentometro.pdf" title="Ir para documento - Aviso de privacidade" target="_blank">aviso de privacidade e proteção de dados pessoais</a>.
 				</p>
-				<p class="desc_box_number">Para termos certeza de que as menções são direcionadas às candidaturas em questão, selecionamos apenas
-				  as respostas diretas aos tweets das candidaturas ou tweets que não mencionem outro perfil além do da candidatura. Também ignoramos
-				  tweets sem nenhum texto. Os tweets selecionados são classificados por uma
-				  <a href="https://github.com/cewebbr/violentometro" target="_blank">inteligência artificial</a> que calcula, a partir do texto do tweet,
+				<p class="desc_box_number">Para termos certeza de que as menções são direcionadas às candidaturas em questão,
+				selecionamos apenas as respostas diretas aos tweets das candidaturas ou tweets que não mencionem outro perfil
+				além do da candidatura. Também ignoramos tweets sem nenhum texto. Os tweets selecionados são classificados por uma
+				  <a href="https://github.com/cewebbr/violentometro" title="Ir para página - Repositório do Violentômetro" target="_blank">inteligência artificial</a> que calcula, a partir do texto do tweet,
 				  a probabilidade de cada tweet conter discurso de ódio.
 				</p>
 				<p class="desc_box_number">
-				  Para calcular o número de ataques diários direcionados às candidaturas femininas com perfis identificados no Twitter,
-				  selecionamos apenas as menções a esses perfis. O número de ataques diários é estimado somando as
-				  probabilidades calculadas pela IA e reescalando esse valor, obtido das amostras, para todas as 975 candidaturas femininas
-				  com presença identificada no Twitter. A coleta e processamento de dados deste projeto segue o seguinte
-				  <a href="assets/docs/aviso_privacidade_violentometro.pdf" target="_blank">aviso de privacidade e proteção de dados pessoais</a>.
+				A inteligência artificial utilizada é uma rede neural do tipo “transformer”, de arquitetura BERT, pré-treinada por
+				<a href="https://github.com/neuralmind-ai/portuguese-bert" title="Ir para página - BERTimbau" target="_blank">Souza et al. (2020)</a>
+				para adivinhar sentenças e palavras ocultadas no meio de 3,53 milhões de documentos obtidos da web brasileira por
+				<a href="https://www.researchgate.net/publication/326303825_The_brWaC_Corpus_A_New_Open_Resource_for_Brazilian_Portuguese" title="Ir para página - Corpus brWaC" target="_blank">Wagner et al. (2018)</a>.
+				Ela foi ajustada para a tarefa específica de identificação de discursos de ódio a partir de 926 exemplos e 4.713
+				contra-exemplos desses discursos disponibilizados pelos trabalhos de
+				<a href="https://github.com/rogersdepelle/OffComBR" title="Ir para página - Github de Pelle" target="_blank">Pelle & Moreira (2017)</a> e
+				<a href="https://github.com/paulafortuna/Portuguese-Hate-Speech-Dataset" title="Ir para página - Github de Fortuna" target="_blank">Fortuna et al. (2019)</a>.
 				</p>
 				<p class="desc_box_number">
-				  Após o término das eleições, os dados coletados serão analisados em maior detalhe e profundidade, e os resultados serão
-				  apresentados em um relatório.
+				  Para calcular o número de ataques diários direcionados às candidaturas femininas com perfis identificados
+				  no Twitter, selecionamos apenas as menções a esses perfis. O número de ataques diários é estimado somando
+				  as probabilidades calculadas pela IA e reescalando esse valor, obtido das amostras, para todas as 975
+				  candidaturas femininas com presença identificada no Twitter. 
+				</p>
+				<p class="desc_box_number">
+				  Após o término das eleições, os dados coletados serão analisados em maior detalhe e profundidade,
+				  e os resultados serão apresentados em um relatório. 
 				</p>
 				
 			</div>
@@ -347,7 +362,7 @@
 	<!--    METODOLOGIA -->
 
 	<!-- 	GRAFICO PARCERIA -->
-
+	
 	<!-- PARCERIA -->
 	<section id="parceria" class="mt-5">
 		<div class="container">
@@ -391,12 +406,12 @@
             <div class="col-lg-4 col-md-5 col-12">
                 <div class="row justify-content-md-center">
 
-                    <a href="https://institutovamosjuntas.org/" target="_blank">
+                    <a href="https://institutovamosjuntas.org/" title="Ir para página - Instituto Vamos Juntas" target="_blank">
                         <img src="assets/img/vamosjuntas-logo.png" alt="Logo @vamosjuntas">
                     </a>
                     <!-- logo ceweb.br -->
 
-                    <a href="https://www.ceweb.br" alt="Ir para página - ceweb.br" target="_blank">
+                    <a href="https://www.ceweb.br" title="Ir para página - ceweb.br" target="_blank">
                         <img src="assets/img/ceweb-logo-footer.svg" alt="Logo ceweb.br" class="img-fluid">
                     </a>
                     <!-- / logo ceweb.br -->
@@ -409,10 +424,10 @@
 
                     <div class="divisor-logo"><span class="sr-only">divisão</span></div>
 
-                    <a href="https://www.nic.br" alt="Ir para página - NIC.br" target="_blank">
+                    <a href="https://www.nic.br" title="Ir para página - NIC.br" target="_blank">
                         <img src="assets/img/NIC-logo-footer.svg" alt="Logo NIC.br" class="img-fluid">
                     </a>
-                    <a href="https://www.cgi.br" alt="Ir para página - CGI.br" target="_blank">
+                    <a href="https://www.cgi.br" title="Ir para página - CGI.br" target="_blank">
                         <img src="assets/img/CGI-logo-footer.svg" alt="Logo CGI.br" class="img-fluid">
                     </a>
                 </div>
@@ -429,6 +444,9 @@ presença de mulheres em espaços de poder. Em 2022, o projeto apoia 150
 lideranças de 25 estados brasileiros. Delas, 48% são não brancas e 
 representam 20 partidos.</p>
                 <p class="content-iniciativa">@vamosjuntasorg</p>
+		<p class="content-iniciativa">As imagens utilizadas nesta página são de livre uso e foram obtidas do
+		<a href="https://nappy.co/" title="Ir para página - Nappy" target="_blank">Nappy</a>
+		e do <a href="https://www.canva.com" title="Ir para página - Canva" target="_blank">Canva</a>.
             </div>
 
             <!-- social icons -->
@@ -442,7 +460,7 @@ representam 20 partidos.</p>
                     <div class="col-lg-3 col-md-12 col-sm-12">
                         <ul>
                             <li>
-                                <a href="https://www.youtube.com/nicbrvideos/" target="_blank" alt="Youtube NIC.br">
+                                <a href="https://www.youtube.com/nicbrvideos/" target="_blank" title="Youtube NIC.br">
                                     <i class="fab fa-youtube" aria-hidden="true">
                                         <span class="sr-only">youtube</span>
                                     </i>
@@ -450,7 +468,7 @@ representam 20 partidos.</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.twitter.com/comunicbr/" target="_blank" alt="Twitter NIC.br">
+                                <a href="https://www.twitter.com/comunicbr/" target="_blank" title="Twitter NIC.br">
                                     <i class="fab fa-twitter" aria-hidden="true">
                                         <span class="sr-only">twitter</span>
                                     </i>
@@ -458,7 +476,7 @@ representam 20 partidos.</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/nic.br/" target="_blank" alt="Facebook NIC.br">
+                                <a href="https://www.facebook.com/nic.br/" target="_blank" title="Facebook NIC.br">
                                     <i class="fab fa-facebook-f" aria-hidden="true">
                                         <span class="sr-only">facebook</span>
                                     </i>
@@ -466,7 +484,7 @@ representam 20 partidos.</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.flickr.com/photos/nicbr/" target="_blank" alt="Flickr NIC.br">
+                                <a href="https://www.flickr.com/photos/nicbr/" target="_blank" title="Flickr NIC.br">
                                     <i class="fab fa-flickr" aria-hidden="true">
                                         <span class="sr-only">flickr</span>
                                     </i>
@@ -474,7 +492,7 @@ representam 20 partidos.</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.telegram.me/nicbr/" target="_blank" alt="Telegram NIC.br">
+                                <a href="https://www.telegram.me/nicbr/" target="_blank" title="Telegram NIC.br">
                                     <i class="fab fa-telegram" aria-hidden="true">
                                         <span class="sr-only">telegram</span>
                                     </i>
@@ -483,7 +501,7 @@ representam 20 partidos.</p>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/company/nic-br/" target="_blank"
-                                alt="Linkedin NIC.br">
+                                title="Linkedin NIC.br">
                                 <i class="fab fa-linkedin" aria-hidden="true">
                                     <span class="sr-only">linkedin</span>
                                 </i>
@@ -491,7 +509,7 @@ representam 20 partidos.</p>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/nicbr/" target="_blank" alt="Instagram NIC.br">
+                            <a href="https://www.instagram.com/nicbr/" target="_blank" title="Instagram NIC.br">
                                 <i class="fab fa-instagram" aria-hidden="true">
                                     <span class="sr-only">instagram</span>
                                 </i>
@@ -499,7 +517,7 @@ representam 20 partidos.</p>
                             </a>
                         </li>
                         <li>
-                            <a href="https://nic.br/noticias/feed.rss" target="_blank" alt="Feed RSS - NIC.br">
+                            <a href="https://nic.br/noticias/feed.rss" target="_blank" title="Feed RSS - NIC.br">
                                 <i class="fas fa-rss" aria-hidden="true">
                                     <span class="sr-only">rss</span>
                                 </i>
@@ -511,7 +529,7 @@ representam 20 partidos.</p>
                 </div>
 
                 <div class="col-lg-7 col-md-12 col-sm-12 text-right">
-                    <a href="mailto:ceweb@nic.br" target="_blank" alt="Contate-nos">
+                    <a href="mailto:ceweb@nic.br" target="_blank" title="Contate-nos via email">
                         <span class="text-contato">Contate-nos</span>
                     </a>
 
@@ -540,5 +558,4 @@ representam 20 partidos.</p>
 
 </body>
 
-</html>
-<!-- FOTTER -->
+</html><!-- FOTTER -->
